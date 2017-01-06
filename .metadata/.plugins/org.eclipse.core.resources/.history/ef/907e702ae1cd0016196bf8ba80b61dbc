@@ -1,0 +1,75 @@
+<?php
+class LoginCheckForEmail {
+	  
+	
+	public function password_strength_check($user,$password){
+		$errors=array();
+	    $pwd=$password[0];
+        $result=true;
+        $results=array();
+        $count=0;
+        
+		if (strlen($pwd) < 8) {
+			$errors[0]= "Password too short! ";
+			$count++;
+			$result=false;
+			}
+
+		if (strlen($pwd) >=30) {
+			$errors[1]= "Password too long!";
+			$counter++;
+			$result=false;
+		}
+
+
+		if (!preg_match("#[0-9]+#", $pwd)) {
+			$errors[2]= "Password must include at least one number!";
+			$result=false;
+		
+		}
+
+		if (!preg_match("#[a-z]+#", $pwd)) {
+			$errors[3]= "Password must include at least one letter!";
+			$result=false;
+		
+		}
+
+		if (!preg_match("#[A-Z]+#", $pwd)) {
+			$errors[4]= "Password must include at least one CAPS!";
+			$result=false;
+		
+		}
+
+	   if (!preg_match("#\W+#", $pwd)) {
+			$errors[5]= "Password must include at least one symbol! ";
+			$result=false;
+			
+		}
+		
+        $results[0]=$result;
+        $results[1]=$errors;
+        
+        if($errors){   
+        	print_r($errors);
+        	}
+     
+       /*if(count($errors) > 0){
+      foreach($errors as $e){
+        echo $e . "<br />";
+    }
+       }
+       */
+    
+		
+		return $results;
+
+	}
+
+	/**
+		*
+		* if the length is correct, check the number of letters 
+		*
+		*/
+
+}
+?>

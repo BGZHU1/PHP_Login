@@ -1,0 +1,2 @@
+LoginCheckForEmail.php	cLoginCheckForEmail	o13	vuser	o48	vpassword	o63	vhashedPassword	o82	m__construct	o115	mpassword_strength_check	o242	mpassword_hash_generation	o1549	mpassword_and_username_match	o1785
+LoginCheckForEmailTest.php	cLoginCheckForEmailTest	o15	ePHPUnit_Framework_TestCase	mtest_check_length	o99

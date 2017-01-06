@@ -1,0 +1,3 @@
+Ball.php	cBall	o15	mcalc_avg	o113	p25	l66
+Baseball.php	cBaseball	o13	mcalc_avg	o108	p25	l62	mcalc_obp	o288	p230	l39	mcalc_slg	o560	mcalc_ops	o798
+BaseballTest.php	cBaseballTest	o82	ePHPUnit_Framework_TestCase	mtestCalAvgEquals	o150	mtestCalAvgEquals2	o390

@@ -1,0 +1,14 @@
+{
+    "require": {
+    },
+    "require-dev": {
+        "phpunit/phpunit": "*"
+    },
+	"autoload":{
+	
+	"classmap":[
+	"LoginCheckTest"
+	]
+	
+	}
+}
